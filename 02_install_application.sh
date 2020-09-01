@@ -1,3 +1,5 @@
+#!/bin/sh
+
 brew cask install appcleaner
 brew cask install visual-studio-code
 brew cask install google-chrome

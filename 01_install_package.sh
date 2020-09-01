@@ -1,3 +1,5 @@
+#!/bin/sh
+
 brew install curl
 brew install git
 brew install tree

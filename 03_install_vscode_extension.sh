@@ -1,4 +1,5 @@
-# code --list-extensions でインストール済拡張機能を確認できる
+#!/bin/sh
+
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension EditorConfig.EditorConfig
 code --install-extension hollowtree.vue-snippets
