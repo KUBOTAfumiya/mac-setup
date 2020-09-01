@@ -26,26 +26,13 @@ xcode-select --install
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" 
 ```
 
-## パッケージのインストール
+## CUI/GUIソフトウェアのインストール
 ```
-sh 01_install_package.sh
-```
-
-ファイルの中身は[01_install_package.sh](/01_install_package.sh)参照。
-
-### 【補足】パーミッション変更
-実行権限を付与する必要がある場合、下記コマンドを実行
-```
-chmod 744 01_install_package.sh
+brew bundle
 ```
 
-## アプリケーションのインストール
+ファイルの中身は[Brewfile](/Brewfile)参照。
 
-```
-sh 02_install_application.sh
-```
-
-ファイルの中身は[02_install_application.sh](/02_install_application.sh)参照。
 
 ## コマンドライン環境構築
 ```
@@ -83,10 +70,16 @@ nodenv global {最新バージョン}
 
 ## Visual Stdio Code拡張機能のインストール
 ```
-sh 03_install_vscode_extension.sh
+sh install_vscode_extension.sh
 ```
 
-ファイルの中身は[03_install_vscode_extension.sh](/03_install_vscode_extension.sh)参照。
+ファイルの中身は[install_vscode_extension.sh](/install_vscode_extension.sh)参照。
+
+### 【補足】パーミッション変更
+実行権限を付与する必要がある場合、下記コマンドを実行
+```
+chmod 744 01_install_package.sh
+```
 
 ### 【補足】インストール済拡張機能の確認
 下記コマンドでインストール済拡張機能を確認できるので、移行前などに確認しておくと良い。
